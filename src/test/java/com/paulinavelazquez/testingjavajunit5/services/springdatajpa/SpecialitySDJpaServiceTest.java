@@ -27,6 +27,7 @@ class SpecialitySDJpaServiceTest {
     // Verify
     @Test
     void deleteByIdAndVerify() {
+        // values must match
         service.deleteById(1L);
         verify(specialityRepository).deleteById(1L);
     }
