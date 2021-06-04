@@ -28,7 +28,7 @@ class SpecialitySDJpaServiceTest {
         service.delete(new Speciality());
     }
 
-    // Argument Matcher
+    // Argument Matcher (returns void)
     @Test
     void testDeleteByObject() {
         Speciality speciality = new Speciality();
@@ -36,7 +36,7 @@ class SpecialitySDJpaServiceTest {
         verify(specialityRepository).delete(any(Speciality.class));
     }
 
-    // Return value from mock
+    // Return value from mock (returns Obj)
     @Test
     void findByIdTestExpectValue() {
         Speciality speciality = new Speciality();
