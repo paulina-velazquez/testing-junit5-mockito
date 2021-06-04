@@ -8,6 +8,8 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import static org.mockito.Mockito.*;
+
 @ExtendWith(MockitoExtension.class)
 class SpecialitySDJpaServiceTest {
 
@@ -22,9 +24,62 @@ class SpecialitySDJpaServiceTest {
         service.delete(new Speciality());
     }
 
+    // Verify
+    @Test
+    void deleteByIdAndVerify() {
+        service.deleteById(1L);
+        verify(specialityRepository).deleteById(1L);
+    }
+
+    @Test
+    void deleteByIdTwice() {
+        service.deleteById(1L);
+        service.deleteById(1L);
+        verify(specialityRepository, times(2)).deleteById(1L);
+    }
+
+    @Test
+    void deleteByIdAtLeast() {
+        service.deleteById(1L);
+        service.deleteById(1L);
+        verify(specialityRepository, atLeastOnce()).deleteById(1L);
+    }
+
+    @Test
+    void deleteByIdAtMost() {
+        service.deleteById(1L);
+        service.deleteById(1L);
+        verify(specialityRepository, atMost(5)).deleteById(1L);
+    }
+
+    @Test
+    void deleteByIdNever() {
+        service.deleteById(1L);
+        service.deleteById(1L);
+        verify(specialityRepository, atLeastOnce()).deleteById(1L);
+        verify(specialityRepository, never()).deleteById(5L);
+    }
+
     @Test
     void deleteById() {
         service.deleteById(1l);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
