@@ -1,6 +1,6 @@
 [![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
 
-# Introduction to JUnit 5 with Maven
+# Introduction to JUnit 5 with Mockito
 
 All source code examples in the repository are for the [Online Course - Testing Spring Beginner to Guru](https://www.udemy.com/testing-spring-boot-beginner-to-guru/?couponCode=GITHUB_REPO)
 This source code repository contains JUnit 5 test examples with Maven.
