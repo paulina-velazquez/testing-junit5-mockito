@@ -16,6 +16,16 @@ public class SpecialitySDJpaService implements SpecialityService {
     }
 
     @Override
+    public void delete(Speciality object) {
+        specialityRepository.delete(object);
+    }
+
+    @Override
+    public void deleteById(Long aLong) {
+        specialityRepository.deleteById(aLong);
+    }
+
+    @Override
     public Set<Speciality> findAll() {
         Set<Speciality> specialities = new HashSet<>();
         specialityRepository.findAll().forEach(specialities::add);
@@ -32,13 +42,5 @@ public class SpecialitySDJpaService implements SpecialityService {
         return specialityRepository.save(object);
     }
 
-    @Override
-    public void delete(Speciality object) {
-        specialityRepository.delete(object);
-    }
 
-    @Override
-    public void deleteById(Long aLong) {
-        specialityRepository.deleteById(aLong);
-    }
 }
