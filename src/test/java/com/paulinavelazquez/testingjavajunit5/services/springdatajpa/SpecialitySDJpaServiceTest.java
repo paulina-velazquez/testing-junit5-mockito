@@ -28,18 +28,24 @@ class SpecialitySDJpaServiceTest {
         service.delete(new Speciality());
     }
 
+    // Argument Matcher
+    @Test
+    void testDeleteByObject() {
+        Speciality speciality = new Speciality();
+        service.delete(speciality);
+        verify(specialityRepository).delete(any(Speciality.class));
+    }
+
     // Return value from mock
     @Test
     void findByIdTestExpectValue() {
         Speciality speciality = new Speciality();
         when(specialityRepository.findById(1L)).thenReturn(Optional.of(speciality));
         Speciality foundSpeciality = service.findById(1L);
-
         // JUnit5
         assertNotNull(foundSpeciality);
         // AssertJ
         assertThat(foundSpeciality).isNotNull();
-
         verify(specialityRepository, times(1)).findById(1l);
     }
 
