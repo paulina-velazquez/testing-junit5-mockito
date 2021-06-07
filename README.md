@@ -7,12 +7,20 @@ This source code repository contains JUnit 5 test examples with Maven.
 
 ---
 
-### Course Content
+### Section 9: Getting Started with Mockito
 
-- Section 1: Introduction
-- Section 2: Introduction to Testing Software
-- Section 3: Test Driven Development By Example
-- Section 4: Getting Started with JUnit 5
-- Section 5: Testing Java with JUnit 5
-- Section 6: Advanced JUnit Testing
-- Section 7: Test Execution
+- Introduction
+- Introduction to Mockito
+- Maven Dependencies for Mockito
+- Creating Mockito Mocks Inline
+- Creating Mockito Mocks with Annotations
+- JUnit Mockito Extension
+- Injecting Mocks with Mockito
+- Verify Interactions with Mockito Mocks
+- Assignment - Write Mockito Test for Vet Service
+- Assignment Review
+- Returning Values from Mockito Mocks
+- Argument Matchers
+- Assignment - Complete Tests for Visit Service
+- Assignment Review
+- Conclusion
