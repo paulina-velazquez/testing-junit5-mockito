@@ -27,4 +27,4 @@ This source code repository contains JUnit 5 test examples with Maven.
 - Conclusion
 
 ---
-*Next section: [Behavior Driven Mockito](https://github.com/paulina-velazquez/testing-junit5-mockito.git).*
+*Next section: [Behavior Driven Mockito](https://github.com/paulina-velazquez/behavior-driven-mockito.git).*
