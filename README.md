@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
 
 # Introduction to JUnit 5 with Mockito
 
@@ -24,3 +25,6 @@ This source code repository contains JUnit 5 test examples with Maven.
 - Assignment - Complete Tests for Visit Service
 - Assignment Review
 - Conclusion
+
+---
+*Next section: [Behavior Driven Mockito](https://github.com/paulina-velazquez/testing-junit5-mockito.git).*
